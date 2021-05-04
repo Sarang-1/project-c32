@@ -333,9 +333,9 @@ function keyPressed(){
 // function to get current world time
 async function getTime(){
     
-  var response = await fetch("http://worldclockapi.com/api/json/est/now");
+  var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
   var responseJSON = await response.json();
-  var datetime = responseJSON.currentDateTime;
+  var datetime = responseJSON.datetime;
   hours = datetime.slice(11,13);
   console.log(hours);
   
