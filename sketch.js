@@ -160,7 +160,7 @@ function draw() {
     text("3. Dropping each block gives you 10 points.",50,200+50);
 
     fill("yellow");
-    text("4. Background will be set according to the world time.",50,250+50);
+    text("4. Background will be set according to the time.",50,250+50);
   
     fill("lightblue");
     text("5. Press on start to continue :-",50,300+50);
@@ -333,7 +333,7 @@ function keyPressed(){
 // function to get current world time
 async function getTime(){
     
-  var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+  var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
   var responseJSON = await response.json();
   var datetime = responseJSON.datetime;
   hours = datetime.slice(11,13);
