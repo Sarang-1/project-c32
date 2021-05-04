@@ -279,9 +279,9 @@ function draw() {
 
     // displaying the world time
   if(hours <= 12){
-  text("World Time: "+ hours + " AM",550,50);
+  text("Time: "+ hours + " AM",550,50);
   } else if(hours > 12) {
-  text("World Time: "+ hours + " PM",550,50);
+  text("Time: "+ hours + " PM",550,50);
   } 
 
   
